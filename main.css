@@ -47,16 +47,18 @@ header {
   gap: 12px;
 }
 
-.nav__links a {
+.nav__link {
   font-weight: 600;
   line-height: 24px;
   padding: 17px 24px;
   border-radius: 12px;
+  cursor: pointer;
 }
-.nav__links a:hover {
+
+.nav__link:hover {
   background-color: var(--clr-gray-400);
 }
-.active__link {
+.nav__link.active__link {
   background-color: var(--clr-gray-400);
 }
 
@@ -179,7 +181,7 @@ aside {
   position: fixed;
   background-color: #e8e8e8;
   left: 0;
-  bottom: 20px;
+  bottom: 10px;
   width: 350px;
   height: calc(100vh - 185px);
   padding-left: 40px;
@@ -192,7 +194,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   cursor: pointer;
   user-select: none;
 }
